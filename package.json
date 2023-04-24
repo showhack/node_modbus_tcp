@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "npx swc src/ -d dist/",
     "start:client": "npm run build && node dist/client.js",
@@ -15,6 +16,7 @@
     "@swc/core": "^1.3.52"
   },
   "dependencies": {
+    "dotenv": "^16.0.3",
     "jsmodbus": "^4.0.6"
   }
 }
