@@ -1,9 +1,9 @@
-import modbus, {ModbusTCPServer} from "jsmodbus";
-import net from "net";
+import modbus, { ModbusTCPServer } from "jsmodbus"
+import net from "net"
 import NetServer = net.Server
 
 export interface ModbusServerConfig {
-  port:number
+  port: number
 }
 
 

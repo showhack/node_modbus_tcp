@@ -1,9 +1,9 @@
-import modbus, { ModbusTCPClient, ModbusTCPRequest } from "jsmodbus"
-import net from "net";
+import modbus, { ModbusTCPClient } from "jsmodbus"
+import net from "net"
 import NetClient = net.Socket
 
 export interface ModbusClientConfig {
-  port:number
+  port: number
 }
 
 export class ModbusClientDriver {
@@ -22,5 +22,4 @@ export class ModbusClientDriver {
   start() {
     this.netClient.connect(this.config.port)
   }
-
 }
