@@ -1,5 +1,5 @@
 import * as dotenv from "dotenv"
-dotenv.config()
+dotenv.config();
 
 export function requireEnv(name: string) {
   // En lugar de buscar la variable de ambiente inmediatamente,
