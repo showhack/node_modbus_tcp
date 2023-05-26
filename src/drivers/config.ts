@@ -23,6 +23,5 @@ export function requireEnv(name: string) {
 export const Config = {
   modbusServerPort: requireEnv("MODBUS_SERVER_PORT"),
   modbusClientPort: requireEnv("MODBUS_CLIENT_PORT"),
-  expressServerPort: requireEnv("EXPRESS_SERVER_PORT")
 }
 
